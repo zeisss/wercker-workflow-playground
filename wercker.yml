@@ -1,19 +1,19 @@
 box: busybox
 build:
   steps:
-    - script
+    - script:
         name: install some basic deps
         code: echo working 
 build-dev:
   # override the box
   box: node
   steps:
-    - script
+    - script:
         name: set env
         code: export NODE_ENV=dev
 push-dev:
   box: node
   steps:
-    - script
+    - script:
        name: foo
        code: echo "push-dev"
