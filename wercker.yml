@@ -1,5 +1,5 @@
 box: busybox
-build-base:
+build:
   steps:
     - script
         name: install some basic deps
